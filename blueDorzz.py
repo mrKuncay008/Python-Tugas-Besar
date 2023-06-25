@@ -1,3 +1,8 @@
+import os
+
+os.system("cls")
+os.system("clear")
+
 print("\n\t----------- Welcome To BlueDorzz Mobile -------------")
 print("\t =============== Hotel Booking System  ================")
 print("\t ------------------------------------------------ ")
@@ -15,6 +20,7 @@ def calculate_total_cost(number_of_rooms, number_of_nights, room_rate, current_r
         return 0
     else:
         return calculate_total_cost(number_of_rooms, number_of_nights, room_rate, current_rooms + 1) + number_of_nights * room_rate 
+
 
 hotel_name = input("\n\t Di Mohon Masukan Nama hotel yang anda ingin Booking: ")
 number_of_rooms = int(input("\tMasukkan jumlah kamar yang ingin Anda pesan: "))
